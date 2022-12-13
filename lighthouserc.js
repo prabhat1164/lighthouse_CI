@@ -4,7 +4,7 @@ module.exports = {
         numberOfRuns: 3,
       },
       assert: {
-        preset: 'lighthouse:no-pwa',
+        preset: 'lighthouse:recommended',
         assertions: {
         'csp-xss': 'warn',
         'categories:performance': ['error', { minScore: 0.95 }],
