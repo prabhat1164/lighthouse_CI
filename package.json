@@ -1,5 +1,6 @@
 {
-  "name": "todos-list",
+  "homepage": "https://prabhat1164.github.io/todos-list",
+  "name": "ci-lighthouse-cli",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
