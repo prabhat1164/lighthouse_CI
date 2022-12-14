@@ -9,6 +9,7 @@ export const About = () => {
         </p>
         <p>
           Hello this is about 2
+          Changes 2
         </p>
     </div>
   )
