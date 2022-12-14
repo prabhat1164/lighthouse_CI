@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 16.x
       - name: npm install, build
-        run:  
+        run: npm install
             npm run build
       - name: Lighthouse Benchmark
         run:  npm install -g @lhci/cli@0.8.x
