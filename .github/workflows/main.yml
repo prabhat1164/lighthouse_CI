@@ -11,12 +11,8 @@ jobs:
         with:
           node-version: 16.x
       - name: npm install, build
-        run: |
-          npm install
-          npm run build
-      - name: run Lighthouse CI Benchmarks
-        run: 
-            npm install -g @lhci/cli@0.8.x
-            lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
+          run: npm install && npm install -g @lhci/cli@0.8.x
+          run: npm run build
+          run: lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
